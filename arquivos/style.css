@@ -1,0 +1,357 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+body{
+    background-image: linear-gradient( to right, rgb(0, 0, 7), rgb(0, 0, 39) );
+}
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    height: 80px;
+}
+#botoesheader{
+    position: absolute;
+    right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 600px;
+    margin-right: 100px; 
+}
+header button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: monospace;
+    font-size: 12pt;
+    cursor: pointer;
+}
+header button:hover{
+    color: rgb(0, 156, 156);
+    transition: 0.2s;
+}
+#divLogo{
+    position: absolute;
+    left: 6%;
+    z-index: 1;
+    font-family: 'Cabin', sans-serif;
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+#divLogo img{
+    width: 100px;
+}
+.secao1{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+}
+#conteudoLateralE{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 7%;
+    height: 500px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contorno{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+.centro{
+    width: 7px;
+    height: 7px;
+    background-color: white;
+    border-radius: 100%;
+}
+#linhaesquerda{
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    left: 7%;
+    top: 12%;
+    width: 1px;
+    height: 600px;
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 83%;
+    position: relative;
+    left: 10%;
+    margin-top: 150px;
+}
+#textosecao1 h1{
+    color: white;
+    font-size: 24pt;
+    font-family:'Cabin', sans-serif;
+}
+#textosecao1 h2{
+    color: white;
+    font-size: 10pt;
+    font-family: 'Cabin', sans-serif;
+    margin-top: 15px;
+}
+#textosecao1 p{
+    color: rgb(161, 161, 161);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 480px;
+}
+#play{
+    background-color: transparent;
+    color: white;
+    margin-top: 30px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 15pt;
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid green;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.027);
+}
+#play:hover{
+    background-color: rgba(255, 255, 255, 0.034);
+    transition: 0.3s;
+}
+.inicio img{
+    max-width: 400px;
+}
+#linhadireita{
+    background-color: rgba(255, 255, 255, 0.123);
+    position: fixed;
+    right: 10%;
+    top: 12%;
+    width: 1px;
+    height: 600px;
+}
+#linksSociais{
+    position: fixed;
+    right: 3.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30px;
+    height: 300px;
+    margin-top: -100px;
+}
+#linksSociais img{
+    max-width: 20px;
+    max-height: 30px;
+    filter: grayscale(100%) brightness(0) invert(1);
+}
+
+.carrossel{
+    margin-left: 8.5%;
+    margin-top: 110px;
+    margin-bottom: 110px;
+    height: 500px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    overflow: hidden;
+}
+.carrossel h1{
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18pt;
+}
+@keyframes slide {
+    0%{
+        background-color: black;
+    }
+    100%{
+        background-color: white;
+    }
+}
+#slide{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 300%;
+    height: 300px;
+    margin-top: 50px;
+}
+#slide img{
+    width: 300px;
+    height: 300px;
+}
+#slide img:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transition: 1s;
+}
+#selectImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+    width: 30%;
+    height: 30px;
+}
+.bttimagens{
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.bttimagens:hover{
+    background-color: aqua;
+    transition: 0.3s;
+    scale: 1.2;
+}
+.Specifications{
+    display: flex;
+    flex-direction:column;
+    width: 80%;
+    margin-left: 8.5%;
+    height: 300px;
+    border-top: 1px solid rgba(128, 128, 128, 0.226);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    margin-bottom: 100px;
+}
+.Specifications h1{
+    text-align: center;
+    padding: 15px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 18pt;
+    margin-bottom: 30px;
+}
+.SpecificationsII{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    justify-content: space-evenly;
+    align-items: start;
+}
+#FEspecifique{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+#Primeiro{
+    margin-top: 30px;
+}
+#FEspecifique h2{
+    font-size: 17pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#TEspecifique{
+    display: flex;
+    flex-direction: column;
+}
+#TEspecifique h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#TEspecifique p{
+    max-width: 250px;
+    font-size: 12pt;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+    margin-top: 30px;
+}
+.fisica{
+    display: flex;
+}
+.fisica h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+.fisica p{
+    margin-left: 10px;
+    color: gray;
+    margin-top: 6px;
+}
+#buy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    height: 300px;
+    width: 80%;
+    left: 8.5%;
+}
+#buy img{
+    max-width: 300px;
+}
+#buy p{
+    max-width: 200px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gray;
+}
+@keyframes button {
+    0%{
+        scale: 1
+    }
+    100%{
+        scale: 1.05
+    }
+}
+#buy button{
+    background: none;
+    padding: 10px;
+    border: 1px solid green;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.055);
+    margin-top: 15px;
+    animation-name: button;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 83%;
+    margin-left: 7%;
+    height: 300px;
+    background-color: black;
+}
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100px;
+    height: 200px;
+}
+footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer button:hover{
+    color: aqua;
+    transition: 0.2s;
+}
