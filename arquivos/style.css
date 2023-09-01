@@ -68,8 +68,9 @@ header button:hover{
     justify-content: center;
     width: 16px;
     height: 16px;
-    border: 1px solid white;
+    border: 1px solid transparent;
     border-radius: 100%;
+    cursor: pointer;
 }
 .centro{
     width: 7px;
