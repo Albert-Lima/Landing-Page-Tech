@@ -48,7 +48,6 @@ header button:hover{
 .secao1{
     display: flex;
     flex-direction: row;
-    background-color: transparent;
 }
 #conteudoLateralE{
     position: fixed;
@@ -346,6 +345,10 @@ header button:hover{
     animation-iteration-count: infinite;
     animation-direction: alternate;
     cursor: pointer;
+    transition: 0.2s;
+}
+#buy button:hover{
+    background-color: rgba(0, 0, 0, 0.479);
 }
 footer{
     display: flex;
@@ -401,4 +404,7 @@ footer button:hover{
         border-radius: 10px;
         width: 150px;
     }
+}
+@media (max-width: 580px){
+
 }
